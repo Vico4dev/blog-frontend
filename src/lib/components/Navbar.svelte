@@ -16,6 +16,8 @@
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
         <li><a href="/" class:active={$page.url.pathname === '/'}>Accueil</a></li>
+        <li><a href="/contact" class:active={$page.url.pathname === '/contact'}>Contact</a></li>
+    
         {#if $user}
           <li><a href="/dashboard" class:active={$page.url.pathname === '/dashboard'}>Tableau de bord</a></li>
           <li><button on:click={handleLogout}>Déconnexion</button></li>
